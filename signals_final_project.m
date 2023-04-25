@@ -1,18 +1,3 @@
-
-%% Examples With Windowing
-
-
-f = [0 0.48 0.48 1];            % Frequency breakpoints
-m = [0 0 1 1];                  % Magnitude breakpoints
-
-b = fir1(34,0.48,'high',hamming(35));   % FIR filter design
-freqz(b,1,512)
-
-d = fir1(34,0.48,'high',rectwin(35));   % FIR filter design
-[H3, w3] = freqz(d,1,512);          % Frequency response of filter
-freqz(d,1,512);
-
-
 %% Chirp Analysis
 
 load chirp
